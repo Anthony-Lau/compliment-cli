@@ -1,0 +1,44 @@
+{
+  "name": "compliment-cli",
+  "description": "A cli for adlibbing compliments when you can't come up with any",
+  "version": "0.0.0",
+  "author": "Anthony Lau @Anthony-Lau",
+  "bin": {
+    "compliment": "./bin/run"
+  },
+  "bugs": "https://github.com/Anthony-Lau/compliment-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.18",
+    "@oclif/config": "^1.13.3",
+    "@oclif/plugin-help": "^2.2.1"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1.2.5",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/Anthony-Lau/compliment-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "compliment"
+  },
+  "repository": "Anthony-Lau/compliment-cli",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
+  }
+}
