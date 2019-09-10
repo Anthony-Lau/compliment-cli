@@ -25,14 +25,22 @@ compliment [options]
 # Commands
 Run `compliment --help` for documentation
 
-```bash
+```
 Outputs a nice compliment to standard output.
 
 USAGE
-  $ compliment
+  $ compliment [options]
 
 OPTIONS
   -h, --help       show CLI help
   -n, --name=name  name to compliment
   -v, --version    show CLI version
+
+DESCRIPTION
+  A commandline tool for creating compliments when you can't think of any.
+  Documentation can be found here https://github.com/Anthony-Lau/compliment-cli.
+
+EXAMPLES
+  $ compliment
+  $ compliment --name anthony
 ```
