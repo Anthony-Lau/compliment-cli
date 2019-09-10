@@ -16,7 +16,6 @@ class ComplimentCliCommand extends Command {
         `Your ${noun} is looking ${adverb} ${adj} today!`,
         `You have ${adverb} ${adj} ${noun}`,
         `You are ${adverb} ${adj}`,
-
       ]
       this.log(randomSelect(templates))
     }
@@ -27,9 +26,17 @@ class ComplimentCliCommand extends Command {
   }
 }
 
-ComplimentCliCommand.description = `Describe the command here
-Extra documentation goes here
+ComplimentCliCommand.description = `Outputs a nice compliment to standard output.
+A commandline tool for creating compliments when you can't think of any.
+Documentation can be found here https://github.com/Anthony-Lau/compliment-cli.
 `
+
+ComplimentCliCommand.usage = '[options]'
+
+ComplimentCliCommand.examples = [
+  '$ compliment',
+  '$ compliment --name anthony',
+]
 
 ComplimentCliCommand.flags = {
   // add --version flag to show CLI version
