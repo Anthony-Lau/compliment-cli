@@ -1,7 +1,7 @@
 {
   "name": "compliment-cli",
   "description": "A cli for adlibbing compliments when you can't come up with any",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Anthony Lau @Anthony-Lau",
   "bin": {
     "compliment": "./bin/run"
@@ -36,7 +36,7 @@
   "oclif": {
     "bin": "compliment"
   },
-  "repository": "Anthony-Lau/compliment-cli",
+  "repository": "https://github.com/Anthony-Lau/compliment-cli",
   "scripts": {
     "posttest": "eslint .",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
